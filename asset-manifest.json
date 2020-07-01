@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/clokify/static/css/main.5f361e03.chunk.css",
-    "main.js": "/clokify/static/js/main.7305eded.chunk.js",
-    "main.js.map": "/clokify/static/js/main.7305eded.chunk.js.map",
+    "main.js": "/clokify/static/js/main.cb3a40fc.chunk.js",
+    "main.js.map": "/clokify/static/js/main.cb3a40fc.chunk.js.map",
     "runtime-main.js": "/clokify/static/js/runtime-main.75068e93.js",
     "runtime-main.js.map": "/clokify/static/js/runtime-main.75068e93.js.map",
     "static/js/2.288a3d3c.chunk.js": "/clokify/static/js/2.288a3d3c.chunk.js",
     "static/js/2.288a3d3c.chunk.js.map": "/clokify/static/js/2.288a3d3c.chunk.js.map",
     "index.html": "/clokify/index.html",
-    "precache-manifest.64ec07ba74511638ffbec381437c309a.js": "/clokify/precache-manifest.64ec07ba74511638ffbec381437c309a.js",
+    "precache-manifest.b5a81a76d6aff17901e83e131f98e756.js": "/clokify/precache-manifest.b5a81a76d6aff17901e83e131f98e756.js",
     "service-worker.js": "/clokify/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/clokify/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.288a3d3c.chunk.js.LICENSE.txt": "/clokify/static/js/2.288a3d3c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.75068e93.js",
     "static/js/2.288a3d3c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.7305eded.chunk.js"
+    "static/js/main.cb3a40fc.chunk.js"
   ]
 }
