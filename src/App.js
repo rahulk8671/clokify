@@ -2,9 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 export default function App() {
-  const [minute, setMinute] = useState(354);
-  const [second, setSecond] = useState(0);
-  const [hour, setHour] = useState(30);
+  //Gets current time and set for default useState
+  var today = new Date();
+  var hh = (today.getHours()*30);
+  var mm = (today.getMinutes()*6);
+  var ss = (today.getSeconds()*6);
+  
+  //Sets the clock hands
+  const [second, setSecond] = useState(ss);
+  const [minute, setMinute] = useState(mm);
+  const [hour, setHour] = useState(hh);
 
   const call = () => {
     setTimeout(() => {
