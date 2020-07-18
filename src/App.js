@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react"
 import Clock from "./Components/Clock"
-import Hour from "./Components/Hour"
-import Minute from "./Components/Minute"
-import Second from "./Components/Second"
+import HourHand from "./Components/Hands/Hour"
+import MinuteHand from "./Components/Hands/Minute"
+import SecondHand from "./Components/Hands/Second"
 import Dial from "./Components/Dial"
-import Case from "./Components/Cace"
+import Case from "./Components/Cace" 
 
 export default function App() {
-    
+    const [rate, setRate] = useState(1)
     const [time, setTime] = useState(new Date());
-    let rate = 1;
+
     useEffect(() => {
         let timeout = setTimeout(() => {
             setTime(new Date(time.getTime() + 1000));
@@ -23,11 +23,14 @@ export default function App() {
         <div>
             <Clock>
                 <Case />
-                <Hour hour={( (360/12) * time.getHours() ) + ( (360/12)/60 ) * time.getMinutes()} />
-                <Minute minute={( (360/60) * time.getMinutes() ) + (360/60*60) * time.getSeconds()} />
-                <Second second={(360/60) * time.getSeconds()} />
+                <HourHand hour={( (360/12) * time.getHours() ) + ( (360/12)/60 ) * time.getMinutes()} />
+                <MinuteHand minute={( (360/60) * time.getMinutes() ) + (360/60*60) * time.getSeconds()} />
+                <SecondHand second={(360/60) * time.getSeconds()} />
                 <Dial />
-            </Clock>
+            </Clock> 
+
+            <p>rate (1-1000)</p>
+            <input value={rate} type="number" onChange={(e) => setRate(parseInt(e.target.value))}/>
         </div>
     )
 }
