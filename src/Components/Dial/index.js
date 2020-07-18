@@ -1,6 +1,6 @@
 import Styled from 'styled-components'
 
-const CenterPoint = Styled.div`
+const Dial = Styled.div`
     width: 10px;
     height: 10px;
     top: 50%;
@@ -10,4 +10,4 @@ const CenterPoint = Styled.div`
     background-color: black;
     transform: translate(-50%, -50%);
 `
-export default CenterPoint
+export default Dial
