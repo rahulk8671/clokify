@@ -6,26 +6,24 @@ import Second from "./Components/Second"
 import CenterPoint from "./Components/CnterPoint"
 
 export default function App() {
-    var today = new Date()
-    const [second, setSecond] = useState(today.getSeconds() * 6)
-    const [minute, setMinute] = useState(today.getMinutes() * 6)
-    const [hour, setHour] = useState(today.getHours() * 30) 
-
+    
+    const [time, setTime] = useState(new Date());
+    let rate = 100;
     useEffect(() => {
-        console.log("how many  times call!!")
-        setTimeout(() => {
-            setSecond((second + 6) % 360)
-            setMinute((minute + 0.1) % 360)
-            setHour((hour + 0.001666) % 360)
-        }, 1)
-    }, [second, minute, hour])
+        let timeout = setTimeout(() => {
+            setTime(new Date(time.getTime() + 1000));
+        }, 1000/rate);
+        return () => {
+            clearTimeout(timeout);
+        }
+    }, [time, rate])
 
     return (
         <div>
             <Clock>
-                <Hour hour={hour} />
-                <Minute minute={minute} />
-                <Second second={second} />
+                <Hour hour={( (360/12) * time.getHours() ) + ( (360/12)/60 ) * time.getMinutes()} />
+                <Minute minute={( (360/60) * time.getMinutes() ) + (360/60*60) * time.getSeconds()} />
+                <Second second={(360/60) * time.getSeconds()} />
                 <CenterPoint />
             </Clock>
         </div>
