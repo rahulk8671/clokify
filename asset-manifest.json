@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/clokify/static/css/main.5f361e03.chunk.css",
-    "main.js": "/clokify/static/js/main.b2d55bb8.chunk.js",
-    "main.js.map": "/clokify/static/js/main.b2d55bb8.chunk.js.map",
+    "main.css": "/clokify/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/clokify/static/js/main.2308778f.chunk.js",
+    "main.js.map": "/clokify/static/js/main.2308778f.chunk.js.map",
     "runtime-main.js": "/clokify/static/js/runtime-main.75068e93.js",
     "runtime-main.js.map": "/clokify/static/js/runtime-main.75068e93.js.map",
-    "static/js/2.288a3d3c.chunk.js": "/clokify/static/js/2.288a3d3c.chunk.js",
-    "static/js/2.288a3d3c.chunk.js.map": "/clokify/static/js/2.288a3d3c.chunk.js.map",
+    "static/js/2.4442b964.chunk.js": "/clokify/static/js/2.4442b964.chunk.js",
+    "static/js/2.4442b964.chunk.js.map": "/clokify/static/js/2.4442b964.chunk.js.map",
     "index.html": "/clokify/index.html",
-    "precache-manifest.c45a2ece0be1dc27375ac5699ce3c23b.js": "/clokify/precache-manifest.c45a2ece0be1dc27375ac5699ce3c23b.js",
+    "precache-manifest.73bb18643f1f2a3d7bf58ce3016de6b8.js": "/clokify/precache-manifest.73bb18643f1f2a3d7bf58ce3016de6b8.js",
     "service-worker.js": "/clokify/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/clokify/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.288a3d3c.chunk.js.LICENSE.txt": "/clokify/static/js/2.288a3d3c.chunk.js.LICENSE.txt"
+    "static/css/main.5ecd60fb.chunk.css.map": "/clokify/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.4442b964.chunk.js.LICENSE.txt": "/clokify/static/js/2.4442b964.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.75068e93.js",
-    "static/js/2.288a3d3c.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.b2d55bb8.chunk.js"
+    "static/js/2.4442b964.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2308778f.chunk.js"
   ]
 }
