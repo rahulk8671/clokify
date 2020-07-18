@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2cbd569d89a8352984631b4b40e8cb34",
+    "revision": "7a6f790117c0ca6dd2ed623a09087bcb",
     "url": "/clokify/index.html"
   },
   {
-    "revision": "28b401e7bdc2d17c4d01",
+    "revision": "95b3bf3a5684346d9d47",
     "url": "/clokify/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/clokify/static/js/2.4442b964.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28b401e7bdc2d17c4d01",
-    "url": "/clokify/static/js/main.2308778f.chunk.js"
+    "revision": "95b3bf3a5684346d9d47",
+    "url": "/clokify/static/js/main.785c9a2a.chunk.js"
   },
   {
     "revision": "d1e096788262a8da68c9",
