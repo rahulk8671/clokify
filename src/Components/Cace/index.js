@@ -7,7 +7,7 @@ import Styled from "styled-components"
 const Case = Styled.div`
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50%; 
 `
 
 const Element = Styled.span`
@@ -17,7 +17,7 @@ const Element = Styled.span`
         `rotate(${props.rotation}deg) translate(-50%, -50%)`};
 `
 
-export default ({ isNumber = false }) => {
+export default ({ isNumber = false, dimension }) => {
     let numbers = [
         "3",
         "4",
@@ -54,8 +54,8 @@ export default ({ isNumber = false }) => {
             key: i,
             value: num,
             rotation: a * i - 90,
-            top: r * Math.sin(angle),
-            left: r * Math.cos(angle),
+            top: r * Math.sin(angle) * ( dimension / 300 ),
+            left: r * Math.cos(angle) * ( dimension / 300 ),
         }
         numberObjects.push(obj)
     })

@@ -7,6 +7,7 @@ import Dial from "./Components/Dial"
 import Case from "./Components/Cace" 
 
 export default function App() {
+    const [dimension, setDimension] = useState(300)
     const [caseType, setCaseType] = useState(false)
     const [rate, setRate] = useState(1)
     const [time, setTime] = useState(new Date());
@@ -34,8 +35,8 @@ export default function App() {
 
     return (
         <div>
-            <Clock>
-                <Case isNumber={caseType}/>
+            <Clock dimension={dimension}>
+                <Case isNumber={caseType} dimension={dimension}/>
                 <HourHand hour={( (360/12) * time.getHours() ) + ( (360/12)/60 ) * time.getMinutes()} />
                 <MinuteHand minute={( (360/60) * time.getMinutes() ) + (360/60*60) * time.getSeconds()} />
                 <SecondHand second={(360/60) * time.getSeconds()} />
@@ -49,6 +50,9 @@ export default function App() {
 
             <p>rate (1-1000)</p>
             <input value={rate} type="number" onChange={(e) => setRate(parseInt(e.target.value))}/>
+
+            <p>Dimension</p>
+            <input value={dimension} type="number" onChange={(e) => setDimension(parseInt(e.target.value))}/>
         </div>
     )
 }
