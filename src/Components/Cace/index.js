@@ -1,7 +1,7 @@
 import React from "react"
-import Hour from './Hour'
-import Minute from './Minute'
-import utils from '../../Utils'
+import Hour from "./Hour"
+import Minute from "./Minute"
+import utils from "../../Utils"
 import Styled from "styled-components"
 
 const Case = Styled.div`
@@ -13,10 +13,11 @@ const Case = Styled.div`
 const Element = Styled.span`
     position: absolute;
     transform-origin: top center;
-    transform: ${(props) => `rotate(${props.rotation}deg) translate(-50%, -50%)`};
+    transform: ${(props) =>
+        `rotate(${props.rotation}deg) translate(-50%, -50%)`};
 `
 
-export default () => {
+export default ({ isNumber = false }) => {
     let numbers = [
         "3",
         "4",
@@ -33,10 +34,16 @@ export default () => {
     ]
 
     numbers = numbers
-    .map((num) => [<Hour number={num}/>, <Minute />, <Minute />, <Minute />, <Minute />])
-    .reduce((acc, curr) => {
-        return acc.concat(curr)
-    }, [])
+        .map((num) => [
+            <Hour number={num} isNumber={isNumber}/>,
+            <Minute />,
+            <Minute />,
+            <Minute />,
+            <Minute />,
+        ])
+        .reduce((acc, curr) => {
+            return acc.concat(curr)
+        }, [])
 
     let numberObjects = []
     numbers.forEach((num, i) => {
@@ -56,10 +63,14 @@ export default () => {
     return (
         <Case>
             {numberObjects.map(({ value, top, left, rotation, key }) => {
+                let rotate = rotation
+                if (isNumber) 
+                    rotate = key % 5 === 0 ? "0" : rotation
+                
                 return (
                     <Element
                         key={key}
-                        rotation={key % 5 === 0 ? '0' : rotation}
+                        rotation={rotate}
                         style={{ top: `${top}px`, left: `${left}px` }}
                     >
                         {value}
